@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jerimic Studio | Photography & Storytelling</title>
+    <meta
+      name="description"
+      content="Professional photography studio specializing in weddings, fashion, portraits, and commercial storytelling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="#home" class="brand">
+          <span class="brand-icon" aria-hidden="true"
+            ><img
+              src="/JERIMIC STUDIO/jerimic images/Jerimic Transparent Logo 2.png"
+              alt="Jerimic Studio Logo"
+          /></span>
+          Jerimic<span>Studio</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn btn-dark nav-cta-mobile"
+            >Book a Session</a
+          >
+        </nav>
+        <a href="#contact" class="btn btn-dark nav-cta">Book a Session</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-content">
+          <div>
+            <p
+              style="
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: var(--accent-2);
+              "
+            >
+              Elevated visual storytelling
+            </p>
+            <h1>
+              Beautiful images that capture your most unforgettable moments.
+            </h1>
+            <p>
+              We create striking portraits, cinematic weddings, polished brand
+              campaigns, and editorial imagery that feel timeless.
+            </p>
+            <div class="hero-actions">
+              <a href="#gallery" class="btn btn-dark">View Portfolio</a>
+              <a href="#services" class="btn btn-light">Explore Services</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Featured Session</h3>
+            <p>
+              Luxury destination wedding coverage with intimate detail shots,
+              dramatic lighting, and natural storytelling.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container stats">
+        <div class="stat-box">
+          <strong>250+</strong>
+          <span>Projects delivered</span>
+        </div>
+        <div class="stat-box">
+          <strong>14</strong>
+          <span>Years experience</span>
+        </div>
+        <div class="stat-box">
+          <strong>98%</strong>
+          <span>Client satisfaction</span>
+        </div>
+        <div class="stat-box">
+          <strong>4.9/5</strong>
+          <span>Average rating</span>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about">
+          <div class="about-card">
+            <div class="section-header" style="margin-bottom: 1rem">
+              <h2>About Jerimic Studio</h2>
+            </div>
+            <p>
+              We blend cinematic composition, natural light, and modern editing
+              to create photos that feel expressive and refined.
+            </p>
+            <p>
+              From intimate portraits to high-impact brand shoots, every session
+              is shaped around your story, mood, and vision.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1170&q=80"
+              alt="Person taking a photograph with a camera"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2>Services</h2>
+              <p>
+                Tailored offers for personal milestones, fashion campaigns, and
+                premium brand storytelling.
+              </p>
+            </div>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="icon">📷</div>
+              <h3>Wedding Coverage</h3>
+              <p>
+                Full-day photography with detailed storytelling, romantic
+                portraits, and polished editing.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="icon">✨</div>
+              <h3>Portrait Sessions</h3>
+              <p>
+                Editorial-style portraits for individuals, couples, and families
+                designed to feel timeless.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="icon">💼</div>
+              <h3>Brand Campaigns</h3>
+              <p>
+                Commercial imagery for launches, social content, and premium
+                visual identity projects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2>Featured Gallery</h2>
+              <p>
+                Browse recent work across weddings, fashion, and lifestyle
+                storytelling.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="wedding">Wedding</button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+          </div>
+          <div class="gallery-grid">
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=golden-hour-wedding"
+              aria-label="Open Golden Hour Wedding"
+            >
+              <article class="gallery-card" data-category="wedding">
+                <img
+                  src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80"
+                  alt="Wedding photography"
+                />
+                <div class="content">
+                  <h3>Golden Hour Wedding</h3>
+                  <p>Romantic seaside ceremony coverage.</p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=editorial-fashion"
+              aria-label="Open Editorial Fashion"
+            >
+              <article class="gallery-card" data-category="fashion">
+                <img
+                  src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                  alt="Fashion photography"
+                />
+                <div class="content">
+                  <h3>Editorial Fashion</h3>
+                  <p>Luxury styling and bold, cinematic visuals.</p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=studio-portrait"
+              aria-label="Open Studio Portrait"
+            >
+              <article class="gallery-card" data-category="portrait">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+                  alt="Portrait photography"
+                />
+                <div class="content">
+                  <h3>Studio Portrait</h3>
+                  <p>Warm light and expressive character study.</p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=luxury-celebration"
+              aria-label="Open Luxury Celebration"
+            >
+              <article class="gallery-card" data-category="wedding">
+                <img
+                  src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+                  alt="Wedding photography detail"
+                />
+                <div class="content">
+                  <h3>Luxury Celebration</h3>
+                  <p>Fine art details and celebration moments.</p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=campaign-visuals"
+              aria-label="Open Campaign Visuals"
+            >
+              <article class="gallery-card" data-category="fashion">
+                <img
+                  src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80"
+                  alt="Fashion campaign"
+                />
+                <div class="content">
+                  <h3>Campaign Visuals</h3>
+                  <p>Minimal aesthetic for a contemporary brand.</p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="gallery-link"
+              href="gallery-detail.html?item=student-picture"
+              aria-label="Open Student Picture"
+            >
+              <article class="gallery-card" data-category="portrait">
+                <img
+                  src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80"
+                  alt="Graduation cap and diploma"
+                />
+                <div class="content">
+                  <h3>Students Picture</h3>
+                  <p>Student portraits captured with natural connection and confidence.</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="offers" class="section offers-section">
+        <div class="container offers-grid">
+          <div class="offers-copy">
+            <div class="section-header" style="margin-bottom: 1rem">
+              <div>
+                <h2>My Offers and Bonus</h2>
+                <p class="subtitle">My last offer</p>
+              </div>
+            </div>
+            <div class="offer-cards">
+              <article class="offer-card">
+                <h3>Holiday Portrait Special</h3>
+                <p>
+                  Book now and enjoy 20% off all studio portrait sessions this
+                  month.
+                </p>
+              </article>
+              <article class="offer-card">
+                <h3>Brand Campaign Package</h3>
+                <p>
+                  Get a full campaign package with bonus social media edits and
+                  content teasers.
+                </p>
+              </article>
+              <article class="offer-card">
+                <h3>Bonus Referral Credit</h3>
+                <p>
+                  Refer a friend to receive a complimentary retouching credit
+                  for your next shoot.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="offers-images">
+            <article class="offer-media-card">
+              <img
+                src="jerimic images/MY OFFER IMAGES/jerimicstudio__2026-02-04T073935.000Z.jpg"
+                alt="Studio offer preview image"
+              />
+              <div class="offer-media-actions">
+                <button
+                  class="offer-preview-btn"
+                  type="button"
+                  data-kind="image"
+                  data-src="jerimic images/MY OFFER IMAGES/jerimicstudio__2026-02-04T073935.000Z.jpg"
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+
+            <article class="offer-media-card">
+              <video
+                class="offer-video-preview"
+                muted
+                playsinline
+                preload="metadata"
+                poster="jerimic images/MY OFFER IMAGES/jerimicstudio__2026-02-04T073935.000Z.jpg"
+              >
+                <source
+                  src="jerimic images/MY OFFER IMAGES/jerimicstudio__2026-02-04T073537.000Z.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="offer-media-actions">
+                <button
+                  class="offer-preview-btn"
+                  type="button"
+                  data-kind="video"
+                  data-src="jerimic images/MY OFFER IMAGES/jerimicstudio__2026-02-04T073537.000Z.mp4"
+                >
+                  Play
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="testimonial-card">
+            <p>
+              “Every frame felt intentional, elegant, and true to our story. The
+              team made us feel at ease from start to finish.”
+            </p>
+            <strong>— Maya & Daniel</strong>
+          </div>
+          <div class="testimonial-card" style="display: none">
+            <p>
+              “Their direction and editing gave our brand campaign a premium
+              feel that instantly elevated our online presence.”
+            </p>
+            <strong>— Olivia, Studio North</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact-card">
+            <h2>Let’s create something unforgettable</h2>
+            <p style="color: var(--muted); margin-top: 0.7rem">
+              Tell us about your vision and we will help shape the perfect
+              session.
+            </p>
+            <ul>
+              <li>📍 Based in Los Angeles, CA</li>
+              <li>📞 (310) 555-0148</li>
+              <li>✉️ hello@jerimicstudio.com</li>
+            </ul>
+
+            <div class="social-section">
+              <h3>Follow me</h3>
+              <div class="social-links">
+                <a
+                  class="social-link social-facebook"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M22 12a10 10 0 1 0-11.57 9.88v-6.99h-2.1v-2.89h2.1V9.4c0-2.08 1.24-3.23 3.14-3.23.91 0 1.86.16 1.86.16v2.05h-1.05c-1.03 0-1.35.64-1.35 1.3v1.56h2.3l-.37 2.89h-1.93v6.99A10 10 0 0 0 22 12Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social-link social-instagram"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="6"
+                      ry="6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16.5 7.5h.01"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="3.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social-link social-linkedin"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M4.98 3.5A2.48 2.48 0 0 0 2.5 5.98a2.48 2.48 0 0 0 2.48 2.48 2.48 2.48 0 0 0 2.48-2.48A2.48 2.48 0 0 0 4.98 3.5ZM3 8.75h3.96V19H3ZM9.26 8.75h3.8v1.34h.05a4.17 4.17 0 0 1 3.74-2.06c4 0 4.73 2.63 4.73 6.05V19h-3.96v-5.17c0-1.23-.02-2.8-1.71-2.8-1.71 0-1.97 1.34-1.97 2.72V19H9.26Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social-link social-twitter"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.14 12.14 0 0 1 3.1 4.7a4.28 4.28 0 0 0 1.32 5.72 4.27 4.27 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 3.99 2.97A8.58 8.58 0 0 1 2 19.54 12.1 12.1 0 0 0 8.56 21.5c7.88 0 12.19-6.53 12.19-12.19 0-.19 0-.4-.01-.58A8.7 8.7 0 0 0 22.46 6Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <form class="contact-form">
+              <input type="text" placeholder="Your name" required />
+              <input type="email" placeholder="Your email" required />
+              <textarea
+                placeholder="Tell us about your project"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-dark">Send Inquiry</button>
+              <div class="form-message" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Jerimic Studio. Crafted for timeless stories.</p>
+      </div>
+    </footer>
+
+    <div class="media-overlay" hidden>
+      <button
+        class="media-overlay-close"
+        type="button"
+        aria-label="Close preview"
+      >
+        ×
+      </button>
+      <div class="media-overlay-frame">
+        <img
+          id="mediaOverlayImage"
+          class="media-overlay-media"
+          hidden
+          alt="Offer preview"
+        />
+        <video
+          id="mediaOverlayVideo"
+          class="media-overlay-media"
+          controls
+          playsinline
+          hidden
+        ></video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
