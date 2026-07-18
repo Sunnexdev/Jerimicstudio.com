@@ -41,7 +41,8 @@ const formMessage = document.querySelector('.form-message');
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    formMessage.textContent = 'Thanks for reaching out. We will reply within 24 hours.';
+    formMessage.textContent =
+      'Thanks for reaching out. We will reply within 24 hours.';
     contactForm.reset();
   });
 }
@@ -109,7 +110,22 @@ if (mediaOverlay) {
 }
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && mediaOverlay && !mediaOverlay.hasAttribute('hidden')) {
+  if (
+    event.key === 'Escape' &&
+    mediaOverlay &&
+    !mediaOverlay.hasAttribute('hidden')
+  ) {
     closeMediaOverlay();
   }
 });
+
+/*A CODE I DONT NEED YET
+// Inside your click event listener for the play button:
+// const video = document.querySelector('.offer-video-preview');
+
+// Check if the user is on a mobile screen width
+// if (window.innerWidth < 900) {
+//   video.removeAttribute('poster'); // Removes the image completely
+//   video.play();
+// }
+*/

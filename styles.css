@@ -537,6 +537,10 @@ a {
   .offers-images {
     grid-template-columns: 1fr 1fr;
   }
+
+  #mediaOverlayImage {
+    display: none !important;
+  }
 }
 
 @media (max-width: 700px) {
