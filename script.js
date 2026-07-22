@@ -73,10 +73,12 @@ function openMediaOverlay(kind, src) {
   }
 
   mediaOverlay.removeAttribute('hidden');
+  mediaOverlay.setAttribute('data-type', kind); // Sets mode to 'video' or 'image'
 
   if (kind === 'video') {
     mediaOverlayImage.hidden = true;
     mediaOverlayVideo.hidden = false;
+
     mediaOverlayVideo.src = src;
     mediaOverlayVideo.load();
     mediaOverlayVideo.play().catch(() => {});
@@ -86,6 +88,7 @@ function openMediaOverlay(kind, src) {
     mediaOverlayVideo.removeAttribute('src');
     mediaOverlayVideo.load();
     mediaOverlayVideo.hidden = true;
+
     mediaOverlayImage.src = src;
     mediaOverlayImage.hidden = false;
   }

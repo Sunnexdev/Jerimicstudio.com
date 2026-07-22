@@ -539,9 +539,9 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
-  #mediaOverlayImage {
+  /* #mediaOverlayImage {
     display: none !important;
-  }
+  } */
 }
 
 @media (max-width: 700px) {
@@ -763,5 +763,38 @@ a {
 
   .hero {
     padding-top: 4rem;
+  }
+}
+/* Mobile Modal Layout Fix */
+@media (max-width: 720px) {
+  /* 1. Only hide the image when the video modal mode is active */
+  .media-overlay[data-type='video'] #mediaOverlayImage {
+    display: none !important;
+  }
+
+  /* 2. Show the image when the preview modal mode is active */
+  .media-overlay[data-type='image'] #mediaOverlayImage {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    object-fit: contain !important;
+  }
+
+  /* 3. Modal frame adjustments for mobile */
+  .media-overlay-frame {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #mediaOverlayVideo {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    object-fit: contain !important;
   }
 }
