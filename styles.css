@@ -484,6 +484,284 @@ a {
   transform: translateY(-2px);
 }
 
+/* ================= PRICING SECTION STYLES ================= */
+.pricing-section {
+  padding: 5rem 1.5rem;
+  background-color: #020814; /* Matches dark theme background */
+  color: #ffffff;
+}
+
+.pricing-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.pricing-subtitle {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff5722; /* Studio accent color */
+  margin-bottom: 0.5rem;
+}
+
+.pricing-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing-description {
+  color: #a0aec0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Pricing Card Component */
+.price-card {
+  background: #0b1329;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 87, 34, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Featured Card Highlighting */
+.price-card.featured-card {
+  border: 2px solid #ff5722;
+  background: #0f1a38;
+}
+
+.featured-ribbon {
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: #ff5722;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+/* Card Header */
+.package-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a0aec0;
+  font-weight: 600;
+}
+
+.package-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.package-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.price-prefix {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  margin-right: 4px;
+}
+
+.package-price .currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff5722;
+}
+
+.package-price .amount {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.package-tagline {
+  font-size: 0.875rem;
+  color: #cbd5e0;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Card Body & Features */
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.package-features li {
+  font-size: 0.925rem;
+  color: #e2e8f0;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  color: #ff5722;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.notice-item {
+  font-size: 0.825rem !important;
+  color: #a0aec0 !important;
+  margin-top: 1rem;
+}
+
+/* Addons inside card */
+.card-addons {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.addons-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a0aec0;
+  margin-bottom: 0.5rem;
+}
+
+.addons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.addons-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.825rem;
+  color: #cbd5e0;
+  margin-bottom: 0.4rem;
+}
+
+.addons-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Card Footer Buttons */
+.card-footer {
+  margin-top: 1.5rem;
+}
+
+.pricing-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background: #ff5722;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #e64a19;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secondary-btn:hover {
+  border-color: #ff5722;
+  color: #ff5722;
+}
+
+/* Extra Recommended Add-ons Section */
+.extra-addons-box {
+  margin-top: 3.5rem;
+  background: #0b1329;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+.extra-title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.extra-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: #a0aec0;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.extra-item strong {
+  color: #ff5722;
+  font-size: 0.95rem;
+}
+
 .media-overlay {
   position: fixed;
   inset: 0;
@@ -542,6 +820,21 @@ a {
   /* #mediaOverlayImage {
     display: none !important;
   } */
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .pricing-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .pricing-title {
+    font-size: 1.75rem;
+  }
+
+  .price-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 700px) {
