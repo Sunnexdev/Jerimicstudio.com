@@ -1,3 +1,4 @@
+/* ================= GENERAL SECTION STYLES ================= */
 :root {
   --bg: #07111f;
   --surface: #0f1b2d;
@@ -72,6 +73,7 @@ a {
   box-shadow: 0 12px 25px rgba(255, 122, 26, 0.3);
 }
 
+/* ================= HEADER SECTION STYLES ================= */
 .site-header {
   position: sticky;
   top: 0;
@@ -152,6 +154,7 @@ a {
   align-self: flex-start;
 }
 
+/* ================= HERO SECTION STYLES ================= */
 .hero {
   padding: 5.5rem 0 4rem;
   background:
@@ -241,6 +244,7 @@ a {
   max-width: 500px;
 }
 
+/* ================= ABOUT SECTION STYLES ================= */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -287,6 +291,7 @@ a {
   object-position: center;
 }
 
+/* ================= SERVICE SECTION STYLES ================= */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -337,6 +342,7 @@ a {
   border-color: transparent;
 }
 
+/* ================= GALLERY SECTION STYLES ================= */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -392,6 +398,8 @@ a {
 .gallery-card.is-hidden {
   display: none;
 }
+
+/* ================= OFFERS SECTION STYLES ================= */
 .offers-section {
   background: linear-gradient(
     180deg,
@@ -762,6 +770,7 @@ a {
   font-size: 0.95rem;
 }
 
+/* ================= VIDEOS SECTION STYLES ================= */
 .media-overlay {
   position: fixed;
   inset: 0;
@@ -808,6 +817,7 @@ a {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
+/* ================= RESPONSIVENESS STYLES ================= */
 @media (max-width: 900px) {
   .offers-grid {
     grid-template-columns: 1fr;
